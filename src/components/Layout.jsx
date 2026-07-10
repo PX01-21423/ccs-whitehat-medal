@@ -9,7 +9,7 @@ export default function Layout() {
       <header className="site-header">
         <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
           <span className="brand-logo-wrap">
-            <img src="/whitehat-club-logo.png" alt="CCS WhiteHat Club logo" />
+            <img src="/whitehat_logo.png" alt="CCS WhiteHat Club logo" />
           </span>
           <span>CCS WHITEHAT CLUB</span>
         </NavLink>

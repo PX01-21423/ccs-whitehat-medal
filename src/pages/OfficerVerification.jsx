@@ -48,11 +48,11 @@ export default function OfficerVerification() {
         <div className="medal-gallery">
           <figure>
             <div className="medal-image"><SafeImage src={officer.medalFront} fallback="/medals/front-placeholder.svg" alt={`Service medal front for ${officer.name}`} /></div>
-            <figcaption>Medal Front</figcaption>
+            <figcaption>Front</figcaption>
           </figure>
           <figure>
             <div className="medal-image"><SafeImage src={officer.medalBack} fallback="/medals/back-placeholder.svg" alt={`Service medal back for ${officer.name}`} /></div>
-            <figcaption>Medal Back</figcaption>
+            <figcaption>Back</figcaption>
           </figure>
         </div>
 
