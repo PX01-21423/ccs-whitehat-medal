@@ -192,17 +192,19 @@ dd { margin: 4px 0 0; color: #d9d8d2; font-size: 12px; }
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
 @media print {
-  @page { size: A4 portrait; margin: 6mm; }
-  html, body { width: 210mm; min-height: 297mm; background: #fff; color: #111; overflow: hidden; }
+  @page { size: A4 portrait; margin: 4mm; }
+  html, body { width: 100%; min-height: 0; margin: 0 !important; padding: 0 !important; background: #fff; color: #111; overflow: visible; }
+  *, *::before, *::after { box-shadow: none !important; text-shadow: none !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
   body::before,.site-header,.site-footer,.certificate-tools { display: none !important; }
-  main,.site-shell,.certificate-page { display: block; width: 100%; min-height: 0; margin: 0; }
+  main,.site-shell,.certificate-page { display: block; width: 100%; min-height: 0; height: auto; margin: 0; padding: 0; overflow: visible; }
   .page-pad { padding: 0 !important; }
   .certificate {
-    width: 198mm;
-    height: 285mm;
+    width: 176mm;
+    height: auto;
+    max-height: 268mm;
     margin: 0 auto;
-    padding: 7mm 8mm;
-    border: 1.4mm solid #8b671e;
+    padding: 5mm 6mm;
+    border: .8mm solid #8b671e;
     box-shadow: none;
     background: #fff;
     color: #111;
@@ -210,43 +212,45 @@ dd { margin: 4px 0 0; color: #d9d8d2; font-size: 12px; }
     page-break-inside: avoid;
     overflow: hidden;
   }
-  .certificate::before { inset: 2.5mm; border-color: #c2a25b; }
+  .certificate::before { inset: 2mm; border-color: #c2a25b; }
   .certificate::after,.corner { display: none; }
   .certificate-header h1,.recipient h3 { color: #111; }
-  .certificate-header h1 { font-size: 13pt; margin-bottom: 2mm; }
-  .certificate-header h2 { color: #8b671e; font-size: 27pt; line-height: 1.05; }
-  .verified-seal { width: 17mm; height: 17mm; box-shadow: none; }
-  .verified-seal svg { width: 8mm; height: 8mm; }
-  .verified-label { margin: 6mm 0 3mm; font-size: 7pt; letter-spacing: .18em; }
-  .motto { margin: 0; color: #333; font-size: 8pt; }
-  .gold-rule { width: 65mm; height: 5mm; margin-bottom: 4mm; }
+  .certificate-header h1 { font-size: 10pt; margin-bottom: 1mm; }
+  .certificate-header h2 { color: #8b671e; font-size: 21pt; line-height: 1; }
+  .verified-seal { width: 12mm; height: 12mm; box-shadow: none; }
+  .verified-seal svg { width: 6mm; height: 6mm; }
+  .verified-label { margin: 4mm 0 2mm; font-size: 5.8pt; letter-spacing: .14em; }
+  .motto { margin: 0; color: #333; font-size: 6.6pt; }
+  .gold-rule { width: 52mm; height: 4mm; margin-bottom: 2.5mm; }
+  .gold-rule i { width: 1.8mm; height: 1.8mm; margin: 0 2mm; }
   .certificate-subject {
-    grid-template-columns: 42mm 1fr;
-    gap: 9mm;
+    grid-template-columns: 31mm 1fr;
+    gap: 6mm;
     align-items: center;
     max-width: none;
-    margin: 8mm 0 6mm;
+    margin: 5mm 0 4mm;
   }
-  .certificate-portrait { width: 42mm; padding: 1.5mm; border-color: #8b671e; }
-  .recipient > p { color: #333; font-size: 7pt; margin: 0 0 2mm; }
-  .recipient h3 { font-size: 25pt; line-height: 1; margin: 0 0 2mm; }
-  .position { color: #8b671e; font-size: 7pt; letter-spacing: .13em; }
-  .recipient blockquote { margin: 5mm 0; padding-left: 4mm; color: #222; line-height: 1.45; font-size: 9pt; }
-  .recipient dl { gap: 6mm; }
-  .recipient dl div { padding: 2.5mm 0 0; border-color: #c2a25b; }
-  dt { color: #333; font-size: 6pt; }
-  dd { color: #111; font-size: 8pt; margin-top: 1mm; }
-  .medal-gallery { max-width: 116mm; margin: 0 auto 6mm; gap: 10mm; }
-  .medal-image { height: 42mm; background: transparent; }
-  .medal-gallery figcaption { margin-top: 2mm; color: #8b671e; font-size: 6pt; }
+  .certificate-portrait { width: 31mm; padding: 1mm; border-color: #8b671e; }
+  .recipient > p { color: #333; font-size: 5.8pt; margin: 0 0 1mm; }
+  .recipient h3 { font-size: 18pt; line-height: 1; margin: 0 0 1.3mm; }
+  .position { color: #8b671e; font-size: 5.8pt; letter-spacing: .1em; }
+  .recipient blockquote { margin: 3mm 0; padding-left: 3mm; color: #222; line-height: 1.25; font-size: 6.8pt; }
+  .recipient dl { gap: 4mm; }
+  .recipient dl div { padding: 1.6mm 0 0; border-color: #c2a25b; }
+  dt { color: #333; font-size: 5pt; }
+  dd { color: #111; font-size: 6.5pt; margin-top: .7mm; }
+  .medal-gallery { max-width: 92mm; margin: 0 auto 4mm; gap: 7mm; }
+  .medal-image { height: 30mm; background: transparent; }
+  .medal-gallery figcaption { margin-top: 1.2mm; color: #8b671e; font-size: 5.2pt; letter-spacing: .13em; }
   .verification-statement {
-    padding: 3mm 4mm;
-    gap: 4mm;
+    padding: 2mm 3mm;
+    gap: 3mm;
     border-color: #668a47;
     color: #222;
-    font-size: 7pt;
-    line-height: 1.35;
+    font-size: 5.8pt;
+    line-height: 1.22;
   }
-  .verification-statement svg { flex-basis: 7mm; width: 7mm; height: 7mm; }
-  .certificate-footer { margin: 4mm 0 0; color: #333; font-size: 6pt; letter-spacing: .06em; }
+  .verification-statement svg { flex-basis: 5mm; width: 5mm; height: 5mm; }
+  .verification-statement p { margin: 0; }
+  .certificate-footer { margin: 2.5mm 0 0; color: #333; font-size: 5.2pt; letter-spacing: .04em; }
 }
