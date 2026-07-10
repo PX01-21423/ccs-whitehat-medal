@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750">
+  <rect width="600" height="750" fill="#090c0a"/>
+  <path d="M0 620 300 475 600 620v130H0z" fill="#141914"/>
+  <circle cx="300" cy="265" r="112" fill="#262c27"/>
+  <path d="M155 609c16-125 70-194 145-194s129 69 145 194" fill="#262c27"/>
+  <path d="M245 487h110l-55 95z" fill="#b88b32"/>
+  <g stroke="#cfa94e" fill="none" opacity=".6"><path d="M20 20h115l30 30"/><path d="M580 730H465l-30-30"/></g>
+  <text x="300" y="690" fill="#d6b760" font-family="Arial" font-size="22" text-anchor="middle" letter-spacing="5">OFFICIAL PORTRAIT</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600">
+  <path fill="#a77725" d="M175 20h150l-15 130-60 48-60-48z"/><path fill="#d8b65a" d="M195 35h110l-11 101-44 35-44-35z"/>
+  <circle cx="250" cy="355" r="157" fill="#171710" stroke="#d8b65a" stroke-width="15"/><circle cx="250" cy="355" r="129" fill="#a77725" stroke="#f0d27d" stroke-width="5"/>
+  <text x="250" y="305" fill="#10120e" font-family="Georgia" font-size="27" font-weight="bold" text-anchor="middle">CCS WHITEHAT</text>
+  <text x="250" y="350" fill="#10120e" font-family="Georgia" font-size="25" text-anchor="middle">CLUB</text><path d="M165 380h170" stroke="#10120e" stroke-width="3"/>
+  <text x="250" y="420" fill="#10120e" font-family="Arial" font-size="19" text-anchor="middle">OFFICIAL SERVICE MEDAL</text>
+</svg>

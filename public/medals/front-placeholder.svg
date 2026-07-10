@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600">
+  <path fill="#a77725" d="M175 20h150l-15 130-60 48-60-48z"/><path fill="#d8b65a" d="M195 35h110l-11 101-44 35-44-35z"/>
+  <circle cx="250" cy="355" r="157" fill="#171710" stroke="#d8b65a" stroke-width="15"/><circle cx="250" cy="355" r="129" fill="#a77725" stroke="#f0d27d" stroke-width="5"/>
+  <path d="m250 245 25 64 69 4-54 43 17 67-57-37-57 37 17-67-54-43 69-4z" fill="#090b09" stroke="#efd27c" stroke-width="4"/>
+  <text x="250" y="484" fill="#10120e" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">SERVICE • EXCELLENCE</text>
+</svg>
