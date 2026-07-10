@@ -134,7 +134,7 @@ dd { margin: 4px 0 0; color: #d9d8d2; font-size: 12px; }
 .recipient dl div { padding: 13px 0; border-top: 1px solid rgba(66,245,108,.28); }
 .medal-gallery { max-width: 620px; margin: 0 auto 38px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
 .medal-gallery figure { margin: 0; }
-.medal-image { height: 240px; display: grid; place-items: center; background: radial-gradient(circle,rgba(214,180,93,.08),transparent 67%); overflow: hidden; }
+.medal-image { height: 300px; display: grid; place-items: center; background: radial-gradient(circle,rgba(214,180,93,.08),transparent 67%); overflow: visible; }
 .medal-image img { max-height: 100%; max-width: 100%; object-fit: contain; border-radius: 50%; filter: drop-shadow(0 16px 24px #000); }
 .medal-gallery figcaption { margin-top: 17px; color: var(--gold); text-transform: uppercase; letter-spacing: .18em; font-size: 10px; }
 .verification-statement { max-width: 860px; margin: auto; padding: 22px 26px; display: flex; align-items: center; gap: 20px; text-align: left; color: #bdc2b8; border: 1px solid rgba(141,255,69,.38); background: rgba(141,255,69,.035); font-size: 12px; line-height: 1.7; }
@@ -192,18 +192,18 @@ dd { margin: 4px 0 0; color: #d9d8d2; font-size: 12px; }
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
 @media print {
-  @page { size: A4 portrait; margin: 4mm; }
-  html, body { width: 100%; min-height: 0; margin: 0 !important; padding: 0 !important; background: #fff; color: #111; overflow: visible; }
+  @page { size: A4 portrait; margin: 3mm; }
+  html, body { width: 210mm; height: 297mm; min-height: 297mm; margin: 0 !important; padding: 0 !important; background: #fff; color: #111; overflow: hidden; }
   *, *::before, *::after { box-shadow: none !important; text-shadow: none !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
   body::before,.site-header,.site-footer,.certificate-tools { display: none !important; }
   main,.site-shell,.certificate-page { display: block; width: 100%; min-height: 0; height: auto; margin: 0; padding: 0; overflow: visible; }
   .page-pad { padding: 0 !important; }
   .certificate {
-    width: 190mm;
-    height: auto;
-    max-height: 280mm;
+    width: 200mm;
+    height: 289mm;
+    max-height: none;
     margin: 0 auto;
-    padding: 7mm 8mm;
+    padding: 7mm 8mm 6mm;
     border: .9mm solid #8b671e;
     box-shadow: none;
     background: #fff;
@@ -219,28 +219,29 @@ dd { margin: 4px 0 0; color: #d9d8d2; font-size: 12px; }
   .certificate-header h2 { color: #8b671e; font-size: 25pt; line-height: 1.02; }
   .verified-seal { width: 15mm; height: 15mm; box-shadow: none; }
   .verified-seal svg { width: 7mm; height: 7mm; }
-  .verified-label { margin: 5mm 0 2.5mm; font-size: 6.4pt; letter-spacing: .16em; }
+  .verified-label { margin: 4mm 0 2mm; font-size: 6.4pt; letter-spacing: .16em; }
   .motto { margin: 0; color: #333; font-size: 7.4pt; }
-  .gold-rule { width: 60mm; height: 4.5mm; margin-bottom: 3mm; }
+  .gold-rule { width: 60mm; height: 4mm; margin-bottom: 2.5mm; }
   .gold-rule i { width: 1.8mm; height: 1.8mm; margin: 0 2mm; }
   .certificate-subject {
-    grid-template-columns: 39mm 1fr;
+    grid-template-columns: 40mm 1fr;
     gap: 8mm;
     align-items: center;
     max-width: none;
-    margin: 6mm 0 5mm;
+    margin: 5mm 0 4mm;
   }
-  .certificate-portrait { width: 39mm; padding: 1.2mm; border-color: #8b671e; }
+  .certificate-portrait { width: 40mm; padding: 1.2mm; border-color: #8b671e; }
   .recipient > p { color: #333; font-size: 6.6pt; margin: 0 0 1.3mm; }
   .recipient h3 { font-size: 23pt; line-height: 1; margin: 0 0 1.7mm; }
   .position { color: #8b671e; font-size: 6.4pt; letter-spacing: .11em; }
-  .recipient blockquote { margin: 4mm 0; padding-left: 3.5mm; color: #222; line-height: 1.32; font-size: 7.6pt; }
+  .recipient blockquote { margin: 3mm 0; padding-left: 3.5mm; color: #222; line-height: 1.28; font-size: 7.4pt; }
   .recipient dl { gap: 5mm; }
   .recipient dl div { padding: 2mm 0 0; border-color: #c2a25b; }
   dt { color: #333; font-size: 5.5pt; }
   dd { color: #111; font-size: 7.2pt; margin-top: .8mm; }
-  .medal-gallery { max-width: 108mm; margin: 0 auto 5mm; gap: 9mm; }
-  .medal-image { height: 38mm; background: transparent; }
+  .medal-gallery { max-width: 124mm; margin: 0 auto 5mm; gap: 10mm; }
+  .medal-image { height: 45mm; background: transparent; overflow: visible; }
+  .medal-image img { border-radius: 50%; }
   .medal-gallery figcaption { margin-top: 1.5mm; color: #8b671e; font-size: 5.8pt; letter-spacing: .14em; }
   .verification-statement {
     padding: 2.6mm 3.5mm;
