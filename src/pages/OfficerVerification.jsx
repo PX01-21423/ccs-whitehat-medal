@@ -5,6 +5,8 @@ import CircuitFrame from '../components/CircuitFrame'
 import SafeImage from '../components/SafeImage'
 import NotFound from './NotFound'
 
+const awardSlots = [1, 2, 3]
+
 export default function OfficerVerification() {
   const { slug } = useParams()
   const officer = officers.find((item) => item.slug === slug)
@@ -44,6 +46,13 @@ export default function OfficerVerification() {
             </dl>
           </div>
         </div>
+
+        <section className="awards-section" aria-labelledby="awards-heading">
+          <h3 id="awards-heading">Awards</h3>
+          <ol>
+            {awardSlots.map((slot) => <li key={slot}><span>{slot}.</span><i /></li>)}
+          </ol>
+        </section>
 
         <div className="medal-gallery">
           <figure>
