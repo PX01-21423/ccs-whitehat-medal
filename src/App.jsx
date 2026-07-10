@@ -11,6 +11,7 @@ export default function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/hall-of-fame" element={<HallOfFame />} />
+        <Route path="/hall-of-fame/:classYear" element={<HallOfFame />} />
         <Route path="/officer/:slug" element={<OfficerVerification />} />
         <Route path="*" element={<NotFound />} />
       </Route>

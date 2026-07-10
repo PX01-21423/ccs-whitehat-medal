@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, QrCode, ShieldCheck } from 'lucide-react'
+import { ArrowRight, ShieldCheck } from 'lucide-react'
 import CircuitFrame from '../components/CircuitFrame'
 
 export default function Home() {
@@ -18,7 +18,6 @@ export default function Home() {
         </p>
         <div className="hero-actions">
           <Link className="button button-outline" to="/hall-of-fame">View Hall of Fame <ArrowRight size={17} /></Link>
-          <Link className="button button-gold" to="/hall-of-fame"><QrCode size={17} /> Verify Officer</Link>
         </div>
         <p className="trust-line"><ShieldCheck size={15} /> Official record of the College of Computing Studies</p>
       </CircuitFrame>

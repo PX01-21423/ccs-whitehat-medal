@@ -13,7 +13,7 @@ export default function OfficerVerification() {
   return (
     <section className="certificate-page page-pad">
       <div className="certificate-tools">
-        <Link to="/hall-of-fame">← Back to Hall of Fame</Link>
+        <Link to="/hall-of-fame/2026">← Back to Class of 2026</Link>
         <button onClick={() => window.print()}><Printer size={16} /> Print Certificate</button>
       </div>
       <CircuitFrame className="certificate">

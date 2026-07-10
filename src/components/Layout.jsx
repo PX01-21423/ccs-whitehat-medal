@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom'
-import { Menu, ShieldCheck, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Layout() {
@@ -8,7 +8,9 @@ export default function Layout() {
     <div className="site-shell">
       <header className="site-header">
         <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
-          <span className="brand-mark"><ShieldCheck size={22} /></span>
+          <span className="brand-logo-wrap">
+            <img src="/whitehat-club-logo.png" alt="CCS WhiteHat Club logo" />
+          </span>
           <span>CCS WHITEHAT CLUB</span>
         </NavLink>
         <button className="menu-button" onClick={() => setOpen(!open)} aria-label="Toggle navigation">
